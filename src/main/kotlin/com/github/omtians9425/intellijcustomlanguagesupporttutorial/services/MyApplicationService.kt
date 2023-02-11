@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.omtians9425.intellijcustomlanguagesupporttutorial.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.omtians9425.intellijcustomlanguagesupporttutorial.MyBundle
 
 class MyApplicationService {
 
