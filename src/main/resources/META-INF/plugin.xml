@@ -1,18 +1,15 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.omtians9425.intellijcustomlanguagesupporttutorial</id>
-    <name>IntelliJ Platform Plugin intellij-custom-language-support-tutorial</name>
+    <name>Custom-Language-Support-Tutorial</name>
     <vendor>omtians9425</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.services.MyProjectService"/>
+        <fileType name="Simple File"
+                  implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleFileType"
+                  language="Simple"
+                  extensions="simple"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.omtians9425.intellijcustomlanguagesupporttutorial.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
