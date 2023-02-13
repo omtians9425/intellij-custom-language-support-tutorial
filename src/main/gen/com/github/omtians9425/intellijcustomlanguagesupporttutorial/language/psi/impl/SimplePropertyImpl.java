@@ -27,4 +27,16 @@ public class SimplePropertyImpl extends ASTWrapperPsiElement implements SimplePr
     else super.accept(visitor);
   }
 
+  @Override
+  @Nullable
+  public String getKey() {
+    return SimplePsiImplUtil.getKey(this);
+  }
+
+  @Override
+  @Nullable
+  public String getValue() {
+    return SimplePsiImplUtil.getValue(this);
+  }
+
 }
