@@ -26,5 +26,8 @@
         <codeInsight.lineMarkerProvider
                 language="JAVA"
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleLineMarkerProvider"/>
+        <completion.contributor
+                language="Simple"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleCompletionContributor"/>
     </extensions>
 </idea-plugin>
