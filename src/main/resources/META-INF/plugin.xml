@@ -35,5 +35,8 @@
         <lang.refactoringSupport
                 language="JAVA"
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleRefactoringSupportProvider"/>
+        <lang.findUsagesProvider
+                language="Simple"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleFindUsagesProvider"/>
     </extensions>
 </idea-plugin>
