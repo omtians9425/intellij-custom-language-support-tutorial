@@ -7,4 +7,12 @@ import com.intellij.psi.PsiElement;
 
 public interface SimpleProperty extends PsiElement {
 
+  //WARNING: getKey(...) is skipped
+  //matching getKey(SimpleProperty, ...)
+  //methods are not found in SimplePsiImplUtil
+
+  //WARNING: getValue(...) is skipped
+  //matching getValue(SimpleProperty, ...)
+  //methods are not found in SimplePsiImplUtil
+
 }
