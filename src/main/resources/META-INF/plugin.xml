@@ -29,5 +29,8 @@
         <completion.contributor
                 language="Simple"
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleCompletionContributor"/>
+        <psi.referenceContributor
+                language="JAVA"
+                implementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleReferenceContributor"/>
     </extensions>
 </idea-plugin>
