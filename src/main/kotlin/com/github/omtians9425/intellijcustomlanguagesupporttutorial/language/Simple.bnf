@@ -6,11 +6,13 @@
     psiClassPrefix="Simple"
     psiImplClassSuffix="Impl"
     psiPackage="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi"
-    psiImplPackage="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi"
+    psiImplPackage="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.impl"
 
     elementTypeHolderClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.SimpleTypes"
     elementTypeClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.SimpleElementType"
     tokenTypeClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.SimpleTokenType"
+
+    psiImplUtilClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.impl.SimplePsiImplUtil"
 }
 
 simpleFile ::= item_*

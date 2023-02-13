@@ -4,6 +4,7 @@ package com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.ps
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.PsiElement;
 import com.intellij.lang.ASTNode;
+import com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.impl.*;
 
 public interface SimpleTypes {
 
