@@ -32,5 +32,8 @@
         <psi.referenceContributor
                 language="JAVA"
                 implementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleReferenceContributor"/>
+        <lang.refactoringSupport
+                language="JAVA"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleRefactoringSupportProvider"/>
     </extensions>
 </idea-plugin>
