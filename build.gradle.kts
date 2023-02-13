@@ -31,6 +31,8 @@ kotlin {
     jvmToolchain(11)
 }
 
+sourceSets["main"].java.srcDirs("src/main/gen")
+
 // Configure Gradle IntelliJ Plugin - read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     pluginName.set(properties("pluginName"))
