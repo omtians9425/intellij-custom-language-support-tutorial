@@ -5,6 +5,7 @@
     <vendor>omtians9425</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <fileType name="Simple File"
@@ -19,5 +20,8 @@
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleSyntaxHighlighterFactory"/>
         <colorSettingsPage
                 implementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleColorSettingsPage"/>
+        <annotator
+                language="JAVA"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleAnnotator"/>
     </extensions>
 </idea-plugin>
