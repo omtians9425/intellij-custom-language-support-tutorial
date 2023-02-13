@@ -1,0 +1,5 @@
+package com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi
+
+import com.intellij.psi.PsiNameIdentifierOwner
+
+interface SimpleNamedElement : PsiNameIdentifierOwner
