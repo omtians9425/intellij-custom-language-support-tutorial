@@ -23,5 +23,8 @@
         <annotator
                 language="JAVA"
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleAnnotator"/>
+        <codeInsight.lineMarkerProvider
+                language="JAVA"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleLineMarkerProvider"/>
     </extensions>
 </idea-plugin>
