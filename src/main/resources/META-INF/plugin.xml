@@ -11,5 +11,8 @@
                   implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleFileType"
                   language="Simple"
                   extensions="simple"/>
+        <lang.parserDefinition
+                language="Simple"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleParserDefinition"/>
     </extensions>
 </idea-plugin>

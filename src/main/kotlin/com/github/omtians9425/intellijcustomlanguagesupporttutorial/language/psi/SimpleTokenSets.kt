@@ -2,7 +2,7 @@ package com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.ps
 
 import com.intellij.psi.tree.TokenSet
 
-interface SimpleTokenSets {
+object SimpleTokenSets {
     val IDENTIFIERS: TokenSet
         get() = TokenSet.create(SimpleTypes.KEY)
 
