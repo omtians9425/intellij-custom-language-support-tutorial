@@ -19,4 +19,8 @@ simpleFile ::= item_*
 
 private item_ ::= (property|COMMENT|CRLF)
 
-property ::= (KEY? SEPARATOR VALUE?) | KEY {methods=[getKey getValue]}
+property ::= (KEY? SEPARATOR VALUE?) | KEY {
+  mixin="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.impl.SimpleNamedElementImpl"
+  implements="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.SimpleNamedElement"
+  methods=[getKey getValue getName setName getNameIdentifier]
+}

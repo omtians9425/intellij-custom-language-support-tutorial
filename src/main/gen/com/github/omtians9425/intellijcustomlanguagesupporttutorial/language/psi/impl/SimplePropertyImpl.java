@@ -8,10 +8,9 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.SimpleTypes.*;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.psi.*;
 
-public class SimplePropertyImpl extends ASTWrapperPsiElement implements SimpleProperty {
+public class SimplePropertyImpl extends SimpleNamedElementImpl implements SimpleProperty {
 
   public SimplePropertyImpl(@NotNull ASTNode node) {
     super(node);
@@ -37,6 +36,24 @@ public class SimplePropertyImpl extends ASTWrapperPsiElement implements SimplePr
   @Nullable
   public String getValue() {
     return SimplePsiImplUtil.getValue(this);
+  }
+
+  @Override
+  @Nullable
+  public String getName() {
+    return SimplePsiImplUtil.getName(this);
+  }
+
+  @Override
+  @NotNull
+  public PsiElement setName(@NotNull String newName) {
+    return SimplePsiImplUtil.setName(this, newName);
+  }
+
+  @Override
+  @Nullable
+  public PsiElement getNameIdentifier() {
+    return SimplePsiImplUtil.getNameIdentifier(this);
   }
 
 }
