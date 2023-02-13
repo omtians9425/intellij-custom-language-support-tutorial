@@ -15,7 +15,9 @@
                 language="Simple"
                 implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleParserDefinition"/>
         <lang.syntaxHighlighterFactory
-            language="Simple"
-            implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleSyntaxHighlighterFactory" />
+                language="Simple"
+                implementationClass="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleSyntaxHighlighterFactory"/>
+        <colorSettingsPage
+                implementation="com.github.omtians9425.intellijcustomlanguagesupporttutorial.language.SimpleColorSettingsPage"/>
     </extensions>
 </idea-plugin>

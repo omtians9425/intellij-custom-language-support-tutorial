@@ -12,14 +12,16 @@ import com.intellij.psi.tree.IElementType
 
 class SimpleSyntaxHighlighter : SyntaxHighlighterBase() {
 
-    private val SEPARATOR: TextAttributesKey =
-        createTextAttributesKey("SIMPLE_SEPARATOR", DefaultLanguageHighlighterColors.OPERATION_SIGN)
-    private val KEY: TextAttributesKey = createTextAttributesKey("SIMPLE_KEY", DefaultLanguageHighlighterColors.KEYWORD)
-    private val VALUE: TextAttributesKey = createTextAttributesKey("SIMPLE_VALUE", DefaultLanguageHighlighterColors.STRING)
-    private val COMMENT: TextAttributesKey =
-        createTextAttributesKey("SIMPLE_COMMENT", DefaultLanguageHighlighterColors.LINE_COMMENT)
-    private val BAD_CHARACTER: TextAttributesKey =
-        createTextAttributesKey("SIMPLE_BAD_CHARACTER", HighlighterColors.BAD_CHARACTER)
+    companion object {
+        val SEPARATOR: TextAttributesKey =
+            createTextAttributesKey("SIMPLE_SEPARATOR", DefaultLanguageHighlighterColors.OPERATION_SIGN)
+        val KEY: TextAttributesKey = createTextAttributesKey("SIMPLE_KEY", DefaultLanguageHighlighterColors.KEYWORD)
+        val VALUE: TextAttributesKey = createTextAttributesKey("SIMPLE_VALUE", DefaultLanguageHighlighterColors.STRING)
+        val COMMENT: TextAttributesKey =
+            createTextAttributesKey("SIMPLE_COMMENT", DefaultLanguageHighlighterColors.LINE_COMMENT)
+        val BAD_CHARACTER: TextAttributesKey =
+            createTextAttributesKey("SIMPLE_BAD_CHARACTER", HighlighterColors.BAD_CHARACTER)
+    }
 
     private val BAD_CHAR_KEYS = arrayOf(BAD_CHARACTER)
     private val SEPARATOR_KEYS = arrayOf(SEPARATOR)
